@@ -1,4 +1,6 @@
-package main
+///////1-27/////
+
+/*package main
 
 import "fmt"
 
@@ -13,4 +15,20 @@ func main() {
 	p = &j         // point to j
 	*p = *p / 37   // divide j through the pointer
 	fmt.Println(j) // see the new value of j - 73
+}
+*/
+
+//////2-27 A struct is a collection of fields./////
+
+package main
+
+import "fmt"
+
+type Vertex struct {
+	X int
+	Y int
+}
+
+func main() {
+	fmt.Println(Vertex{1, 2})
 }
