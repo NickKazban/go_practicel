@@ -48,10 +48,26 @@ func main() {
 // 	X := "first"
 // 	Y := "second"
 
-// 	v := Vertex{1, 2}
-// 	v.X = 4
-// 	fmt.Println(v.X)
-// 	fmt.Println(v.X, v.Y)
-// 	fmt.Println(X, Y)
+//		v := Vertex{1, 2}
+//		v.X = 4
+//		fmt.Println(v.X)
+//		fmt.Println(v.X, v.Y)
+//		fmt.Println(X, Y)
+//	}
+//
+// ////4-27 Pointers to structs/////
+// package main
+
+// import "fmt"
+
+// type Vertex struct {
+// 	X int
+// 	Y int
 // }
-//////4-27 Struct Fields/////
+
+// func main() {
+// 	v := Vertex{1, 2}
+// 	p := &v
+// 	p.X = 1e9
+// 	fmt.Println(v)
+// }
