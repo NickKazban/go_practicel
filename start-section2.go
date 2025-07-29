@@ -55,7 +55,7 @@ func main() {
 //		fmt.Println(X, Y)
 //	}
 //
-// ////4-27 Pointers to structs/////
+// ////5-27 Pointers to structs/////
 // package main
 
 // import "fmt"
@@ -71,3 +71,22 @@ func main() {
 // 	p.X = 1e9
 // 	fmt.Println(v)
 // }
+					// ////5-27 Struct Literals/////
+package main
+
+import "fmt"
+
+type Vertex struct {
+	X, Y int
+}
+
+var (
+	v1 = Vertex{1, 2}  // has type Vertex
+	v2 = Vertex{X: 1}  // Y:0 is implicit
+	v3 = Vertex{}      // X:0 and Y:0
+	p  = &Vertex{1, 2} // has type *Vertex
+)
+
+func main() {
+	fmt.Println(v1, p, v2, v3)
+}
