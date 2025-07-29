@@ -77,9 +77,9 @@ func main() {
 	}
 }*/
 
-//////11-14////
+//////11-14 Кейс з часовими рамками дня////
 
-package main
+/*package main
 
 import (
 	"fmt"
@@ -91,9 +91,11 @@ func main() {
 	switch {
 	case t.Hour() < 12:
 		fmt.Println("Good morning!")
-	case t.Hour() < 17:
+	case t.Hour() < 18:
 		fmt.Println("Good afternoon.")
 	default:
 		fmt.Println("Good evening.")
 	}
 }
+*/
+
