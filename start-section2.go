@@ -65,13 +65,14 @@ func main() {
 // 	Y int
 // }
 
-// func main() {
-// 	v := Vertex{1, 2}
-// 	p := &v
-// 	p.X = 1e9
-// 	fmt.Println(v)
-// }
-					// ////5-27 Struct Literals/////
+//	func main() {
+//		v := Vertex{1, 2}
+//		p := &v
+//		p.X = 1e9
+//		fmt.Println(v)
+//	}
+//
+// ////5-27 Struct Literals/////
 package main
 
 import "fmt"
@@ -88,5 +89,9 @@ var (
 )
 
 func main() {
+	fmt.Println(v1)
+	fmt.Println(v2)
+	fmt.Println(v3)
+	fmt.Println(p)
 	fmt.Println(v1, p, v2, v3)
 }
