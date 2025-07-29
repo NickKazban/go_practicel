@@ -79,7 +79,7 @@ func main() {
 
 //////11-14 Кейс з часовими рамками дня////
 
-/*package main
+package main
 
 import (
 	"fmt"
@@ -97,5 +97,3 @@ func main() {
 		fmt.Println("Good evening.")
 	}
 }
-*/
-
