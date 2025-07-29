@@ -20,7 +20,7 @@ func main() {
 
 //////2-27 A struct is a collection of fields./////
 
-package main
+/*package main
 
 import "fmt"
 
@@ -32,3 +32,26 @@ type Vertex struct {
 func main() {
 	fmt.Println(Vertex{1, 2})
 }
+*/
+//////3-27 Struct Fields/////
+
+// package main
+
+// import "fmt"
+
+// type Vertex struct {
+// 	X int
+// 	Y int
+// }
+
+// func main() {
+// 	X := "first"
+// 	Y := "second"
+
+// 	v := Vertex{1, 2}
+// 	v.X = 4
+// 	fmt.Println(v.X)
+// 	fmt.Println(v.X, v.Y)
+// 	fmt.Println(X, Y)
+// }
+//////4-27 Struct Fields/////
