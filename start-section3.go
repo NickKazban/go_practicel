@@ -73,25 +73,25 @@ func main() {
 //	}
 //
 // ////5-27 Struct Literals/////
-package main
+// package main
 
-import "fmt"
+// import "fmt"
 
-type Vertex struct {
-	X, Y int
-}
+// type Vertex struct {
+// 	X, Y int
+// }
 
-var (
-	v1 = Vertex{1, 2}  // has type Vertex
-	v2 = Vertex{X: 1}  // Y:0 is implicit
-	v3 = Vertex{}      // X:0 and Y:0
-	p  = &Vertex{1, 2} // has type *Vertex
-)
+// var (
+// 	v1 = Vertex{1, 2}  // has type Vertex
+// 	v2 = Vertex{X: 1}  // Y:0 is implicit
+// 	v3 = Vertex{}      // X:0 and Y:0
+// 	p  = &Vertex{1, 2} // has type *Vertex
+// )
 
-func main() {
-	fmt.Println(v1)
-	fmt.Println(v2)
-	fmt.Println(v3)
-	fmt.Println(p)
-	fmt.Println(v1, p, v2, v3)
-}
+// func main() {
+// 	fmt.Println(v1)
+// 	fmt.Println(v2)
+// 	fmt.Println(v3)
+// 	fmt.Println(p)
+// 	fmt.Println(v1, p, v2, v3)
+// }
