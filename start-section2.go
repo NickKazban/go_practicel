@@ -227,20 +227,44 @@ func main() {
 // }
 // ////12-27 Nil slices////
 
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	var s []int
+// 	fmt.Println(s, len(s), cap(s))
+// 	if s == nil {
+// 		fmt.Println("nil!")
+// 	}
+
+// 	k := []int{43, 54, 123, 2, 14, 5, 6}
+// 	fmt.Println(k, len(k), cap(k))
+// 	if k == nil {
+// 		fmt.Println("nil!")
+// 	}
+// }
+// ////13-27 Creating a slice with make////
+
 package main
 
 import "fmt"
 
 func main() {
-	var s []int
-	fmt.Println(s, len(s), cap(s))
-	if s == nil {
-		fmt.Println("nil!")
-	}
+	a := make([]int, 5)
+	printSlice("a", a)
 
-	k := []int{43, 54, 123, 2, 14, 5, 6}
-	fmt.Println(k, len(k), cap(k))
-	if k == nil {
-		fmt.Println("nil!")
-	}
+	b := make([]int, 0, 5)
+	printSlice("b", b)
+
+	c := b[:2]
+	printSlice("c", c)
+
+	d := c[2:5]
+	printSlice("d", d)
+}
+
+func printSlice(s string, x []int) {
+	fmt.Printf("%s len=%d cap=%d %v\n",
+		s, len(x), cap(x), x)
 }
