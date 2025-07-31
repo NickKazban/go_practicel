@@ -130,20 +130,41 @@
 // }
 
 // 13-26 Nil interface values//
+// package main
+
+// import "fmt"
+
+// type I interface {
+// 	M()
+// }
+
+// func main() {
+// 	var i I
+// 	describe(i)
+// 	i.M()
+// }
+
+// func describe(i I) {
+// 	fmt.Printf("(%v, %T)\n", i, i)
+// }
+
+// 14-26 The empty interface//
 package main
 
 import "fmt"
 
-type I interface {
-	M()
-}
-
 func main() {
-	var i I
+	var i interface{} //викликає 1 раз
 	describe(i)
-	i.M()
+
+	i = 42 //викликає 2 раз
+	describe(i)
+
+	i = "hello" //викликає 3 раз
+	describe(i)
+
 }
 
-func describe(i I) {
-	fmt.Printf("(%v, %T)\n", i, i)
+func describe(i interface{}) {
+	fmt.Printf("(%v, %T)\n", i, i) //викликає 3 рази
 }
